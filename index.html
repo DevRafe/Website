@@ -57,12 +57,41 @@
             let btn = document.getElementById('btn')
             let mountains_front = document.getElementById('mountains_front')
 
+            console.log(stars.style.left)
+            var starsTemp = 0;
+            var valuesStars = 0;
+            var interval2 = setInterval(function(){
+                if(starsTemp == 0)
+                {
+                    valuesStars = valuesStars + 0.08
+                    stars.style.left = valuesStars + 10 + 'px';
+                } else {
+                    valuesStars = valuesStars - 0.08
+                    stars.style.left = valuesStars - 10 + 'px';
+                }
+            }, 0.25)
+
+            var interval3 = setInterval(function(){
+                if(starsTemp === 0)
+                {
+                    starsTemp = 1
+                } else {
+                    starsTemp = 0
+                }
+            }, 15000)
             let home = document.getElementById('home')
             let projects = document.getElementById('projects')
             let contact = document.getElementById('contact')
             window.addEventListener('scroll', function() {
+                if(window.pageYOffset < projects.offsetTop)
+                {
+                    window.location.hash  = "#home"
+                }
+                if(window.pageYOffset > projects.offsetTop)
+                {
+                    window.location.hash  = "#projects"
+                }
                 let value = window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
                 moon.style.top = value * 1.0 + 'px'
                 mountains_behind.style.top = value * 0.5 + 'px'
                 mountains_front.style.top = value * 0 + 'px'
