@@ -133,6 +133,12 @@ header ul li a:hover
     padding: 100px;
     background: #1c0522;
 }
+.projects br
+{
+      content: "A" !important;
+      display: block !important;
+      margin-bottom: 1.5em !important;
+}
 .projects h2
 {
     font-size: 3.5em;
@@ -145,24 +151,58 @@ header ul li a:hover
 }
 .projects h1
 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 5px;
     margin-left: 20px;
+    
     left: 10px;
+    color: #fff;
+}
+.projects h1 a
+{
+    text-decoration: none;
     color: #fff;
 }
 .projects p1
 {
-    font-size: 1em;
+    font-size: 1.25em;
     margin-left: 40px;
     color: #fff;
 }
-
+.projects ul
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.projects ul li
+{
+    list-style: none;
+    color: #1c0522;
+}
+.projects ul li a
+{
+    margin-left: 28px;
+    text-decoration: none;
+    padding: 6px 15px;
+    font-size: 1.25em;
+    color: #fff;
+    border-radius: 20px;
+}
 .contact
 {
     position: relative;
     padding: 100px;
     background: #1c0522;
+}
+.contact img {
+    float:left;
+}
+.contact h3 {
+    float:right;
+    color: #fff;
+    margin-right: 1475px;
+    margin-top: 40px;
 }
 .contact h2
 {
