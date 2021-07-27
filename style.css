@@ -7,12 +7,28 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+
 body
 {
     min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#2b1055, #7597de);  
 }
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+body::-webkit-scrollbar-track { 
+    background-color: #fff; 
+    border-radius: 8px; 
+} 
 header
 {
     position: fixed;
@@ -53,7 +69,7 @@ header ul li a:hover
     background: #fff;
     color: #2b1055;
 }
-section
+.home
 {
     position: relative;
     width: 100%;
@@ -64,7 +80,7 @@ section
     align-items: center;
     overflow: hidden;
 }
-section::before
+.home::before
 {
     position: absolute;
     bottom: 0;
@@ -73,7 +89,7 @@ section::before
     background: linear-gradient(to top, #1c0522, transparent);
     z-index: 1000;
 }
-section img
+.home img
 {
     position: absolute;
     top: 0;
@@ -83,18 +99,18 @@ section img
     object-fit: cover;
     pointer-events: none;
 }
-section img#moon
+.home img#moon
 {
  mix-blend-mode: screen;
 }
-section img#mountains_front
+.home img#mountains_front
 {
     z-index: 10;
 }
 #text
 {
     position: absolute;
-    color: #105341;
+    color: #2b1055;
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
@@ -120,11 +136,55 @@ section img#mountains_front
 .projects h2
 {
     font-size: 3.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #fff;
 }
-.projects p
+.projects h2 span
+{
+    color: crimson;
+}
+.projects h1
+{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    left: 10px;
+    color: #fff;
+}
+.projects p1
 {
     font-size: 1em;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.contact
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.contact h2
+{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.contact h2 span
+{
+    color: crimson;
+}
+.contact h1
+{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    left: 10px;
+    color: #fff;
+}
+.contact p1
+{
+    font-size: 1em;
+    margin-left: 40px;
     color: #fff;
 }
