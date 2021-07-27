@@ -107,6 +107,15 @@ header ul li a:hover
 {
     z-index: 10;
 }
+#hour
+{
+    top: 0px;
+    position: absolute;
+    color: #1b0555;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
 #text
 {
     position: absolute;
