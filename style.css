@@ -202,13 +202,10 @@ header ul li a:hover
       margin-bottom: 1.5em !important;
 }
 .contact img {
-    float:left;
+    vertical-align: middle;
 }
 .contact h3 {
-    float:right;
     color: #fff;
-    margin-right: 1425px;
-    margin-top: 40px;
 }
 .contact h2
 {
