@@ -195,6 +195,12 @@ header ul li a:hover
     padding: 100px;
     background: #1c0522;
 }
+.contact br
+{
+      content: "A" !important;
+      display: block !important;
+      margin-bottom: 1.5em !important;
+}
 .contact img {
     float:left;
 }
