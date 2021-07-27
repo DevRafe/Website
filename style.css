@@ -109,7 +109,7 @@ header ul li a:hover
 }
 #hour
 {
-    top: 0px;
+    top: 2px;
     position: absolute;
     color: #1b0555;
     white-space: nowrap;
