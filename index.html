@@ -79,18 +79,7 @@
                     starsTemp = 0
                 }
             }, 15000)
-            let home = document.getElementById('home')
-            let projects = document.getElementById('projects')
-            let contact = document.getElementById('contact')
             window.addEventListener('scroll', function() {
-                if(window.pageYOffset < projects.offsetTop)
-                {
-                    window.location.hash  = "#home"
-                }
-                if(window.pageYOffset > projects.offsetTop)
-                {
-                    window.location.hash  = "#projects"
-                }
                 let value = window.scrollY;
                 moon.style.top = value * 1.0 + 'px'
                 mountains_behind.style.top = value * 0.5 + 'px'

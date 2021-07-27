@@ -135,6 +135,7 @@ header ul li a:hover
     font-size: 2.5em;
     z-index: 9;
     transform: translateY(100px);
+    scroll-behavior: auto;
 }
 .projects
 {
